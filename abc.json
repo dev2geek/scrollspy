@@ -1,0 +1,14 @@
+{
+    "name": "scrollspy",
+    "version": "1.0",
+    "desc": "",
+    "cover": "",
+    "tag":"navigator",
+    "author": {
+        "name": "七念",
+        "email": "qinian.wmq@taobao.com",
+        "page": ""
+    },
+    "type": "kissy-gallery",
+    "type-url": "http://gallery.kissyui.com/guide"
+}

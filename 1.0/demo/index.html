@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>scrollspy的demo</title>
+    <script src="http://g.tbcdn.cn/kissy/k/1.3.2/kissy-min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="http://g.tbcdn.cn/kissy/k/1.3.2/css/dpl/base-min.css">
+    <link rel="stylesheet" href="http://getbootstrap.com/2.3.2/assets/css/bootstrap.css"/>
+    <style type="text/css">
+        body {
+            padding: 20px;
+        }
+        .scrollspy-area {
+            height: 200px;
+            overflow: auto;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<h2>scrollspy的demo</h2>
+
+<script>
+    var S = KISSY;
+    if (S.Config.debug) {
+        var srcPath = "../../../";
+        S.config({
+            debug:true,
+            packages:[
+                {
+                    name:"gallery",
+                    path:srcPath,
+                    charset:"utf-8",
+                    ignorePackageNameInUri:true
+                }
+            ]
+        });
+    }
+
+    S.use('gallery/scrollspy/1.0/index', function (S, ScrollSpy) {
+        new ScrollSpy({
+            offset: 0,
+            navContainer: "#s_index_r_nav",
+            activerSelector: ".nav li",
+            scrollArea: ".scrollspy-area",
+            navSelector: "#s_index_r_nav.nav li > a"
+        });
+    });
+</script>
+
+<div id="content">
+    
+
+    <h3 class="s-title">Demo - 功能点</h3>
+    <p>随着右侧容器内的内容上下滚动，左侧导航条跟随变化</p>
+    <div class="s-section">
+        <div class="s-demo">
+            <div class="row">
+                <div class="span3 well" style="margin-left: 20px;">
+                    <ul class="nav nav-list" id="s_index_r_nav">
+                        <li><a data-href="#J_Home" href="#J_Home">Home</a></li>
+                        <li><a data-href="#J_Library" href="#J_Library">Library</a></li>
+                        <li><a data-href="#J_Application" href="#J_Application">Applications</a></li>
+                        <li><a data-href="#J_Profile" href="#J_Profile">Profile</a></li>
+                        <li><a data-href="#J_Settings" href="#J_Settings">Settings</a></li>
+                        <li><a data-href="#J_Help" href="#J_Help">Help</a></li>
+                    </ul>       
+                </div>
+                <div class="span9 scrollspy-area">
+                  <div id="J_Home">
+                    <h3>Home</h3>
+                    <p>Branching allows you to build new features or test out ideas without putting your main project at risk. In git, branch is a sort of bookmark that references the last commit made in the branch. This makes branches very small and easy to work with.Branching allows you to build new features or test out ideas without putting your main project at risk. In git, branch is a sort of bookmark that references the last commit made in the branch. This makes branches very small and easy to work with.Branching allows you to build new features or test out ideas without putting your main project at risk. In git, branch is a sort of bookmark that references the last commit made in the branch. This makes branches very small and easy to work with.</p>
+                    <p>Branching allows you to build new features or test out ideas without putting your main project at risk. In git, branch is a sort of bookmark that references the last commit made in the branch. This makes branches very small and easy to work with.Branching allows you to build new features or test out ideas without putting your main project at risk. In git, branch is a sort of bookmark that references the last commit made in the branch. This makes branches very small and easy to work with.Branching allows you to build new features or test out ideas without putting your main project at risk. In git, branch is a sort of bookmark that references the last commit made in the branch. This makes branches very small and easy to work with.</p>
+                  </div>
+                  <div id="J_Library">
+                    <h3>Library</h3>
+                    <p>Branching allows you to build new features or test out ideas without putting your main project at risk. In git, branch is a sort of bookmark that references the last commit made in the branch. This makes branches very small and easy to work with.Branching allows you to build new features or test out ideas without putting your main project at risk. In git, branch is a sort of bookmark that references the last commit made in the branch. This makes branches very small and easy to work with.Branching allows you to build new features or test out ideas without putting your main project at risk. In git, branch is a sort of bookmark that references the last commit made in the branch. This makes branches very small and easy to work with.</p>
+                    <p>Branching allows you to build new features or test out ideas without putting your main project at risk. In git, branch is a sort of bookmark that references the last commit made in the branch. This makes branches very small and easy to work with.Branching allows you to build new features or test out ideas without putting your main project at risk. In git, branch is a sort of bookmark that references the last commit made in the branch. This makes branches very small and easy to work with.Branching allows you to build new features or test out ideas without putting your main project at risk. In git, branch is a sort of bookmark that references the last commit made in the branch. This makes branches very small and easy to work with.</p>
+                  </div>
+                  <div id="J_Application">
+                    <h3>Applications</h3>
+                    <p>Branching allows you to build new features or test out ideas without putting your main project at risk. In git, branch is a sort of bookmark that references the last commit made in the branch. This makes branches very small and easy to work with.Branching allows you to build new features or test out ideas without putting your main project at risk. In git, branch is a sort of bookmark that references the last commit made in the branch. This makes branches very small and easy to work with.Branching allows you to build new features or test out ideas without putting your main project at risk. In git, branch is a sort of bookmark that references the last commit made in the branch. This makes branches very small and easy to work with.</p>
+                    <p>Branching allows you to build new features or test out ideas without putting your main project at risk. In git, branch is a sort of bookmark that references the last commit made in the branch. This makes branches very small and easy to work with.Branching allows you to build new features or test out ideas without putting your main project at risk. In git, branch is a sort of bookmark that references the last commit made in the branch. This makes branches very small and easy to work with.Branching allows you to build new features or test out ideas without putting your main project at risk. In git, branch is a sort of bookmark that references the last commit made in the branch. This makes branches very small and easy to work with.</p>
+                  </div>
+                  <div id="J_Profile">
+                    <h3>Profile</h3>
+                    <p>Branching allows you to build new features or test out ideas without putting your main project at risk. In git, branch is a sort of bookmark that references the last commit made in the branch. This makes branches very small and easy to work with.Branching allows you to build new features or test out ideas without putting your main project at risk. In git, branch is a sort of bookmark that references the last commit made in the branch. This makes branches very small and easy to work with.Branching allows you to build new features or test out ideas without putting your main project at risk. In git, branch is a sort of bookmark that references the last commit made in the branch. This makes branches very small and easy to work with.</p>
+                    
+                  </div>
+                  <div id="J_Settings">
+                    <h3>Settings</h3>
+                    <p>Branching allows you to build new features or test out ideas without putting your main project at risk. In git, branch is a sort of bookmark that references the last commit made in the branch. This makes branches very small and easy to work with.Branching allows you to build new features or test out ideas without putting your main project at risk. In git, branch is a sort of bookmark that references the last commit made in the branch. This makes branches very small and easy to work with.Branching allows you to build new features or test out ideas without putting your main project at risk. In git, branch is a sort of bookmark that references the last commit made in the branch. This makes branches very small and easy to work with.</p>
+                    
+                  </div>
+                  <div id="J_Help">
+                    <h3>Help</h3>
+                    <p>Branching allows you to build new features or test out ideas without putting your main project at risk. In git, branch is a sort of bookmark that references the last commit made in the branch. This makes branches very small and easy to work with.Branching allows you to build new features or test out ideas without putting your main project at risk. In git, branch is a sort of bookmark that references the last commit made in the branch. This makes branches very small and easy to work with.Branching allows you to build new features or test out ideas without putting your main project at risk. In git, branch is a sort of bookmark that references the last commit made in the branch. This makes branches very small and easy to work with.</p>
+                    <p>Branching allows you to build new features or test out ideas without putting your main project at risk. In git, branch is a sort of bookmark that references the last commit made in the branch. This makes branches very small and easy to work with.Branching allows you to build new features or test out ideas without putting your main project at risk. In git, branch is a sort of bookmark that references the last commit made in the branch. This makes branches very small and easy to work with.Branching allows you to build new features or test out ideas without putting your main project at risk. In git, branch is a sort of bookmark that references the last commit made in the branch. This makes branches very small and easy to work with.</p>
+                  </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+</div>
+<div id="footer">
+    &copy; Copyright 2011~2013, KISSY Team.
+</div>
+</body>
+</html>
